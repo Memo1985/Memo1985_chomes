@@ -1,0 +1,10 @@
+name: "my-website"
+navbar:
+  title: "Gira Puntarenas"
+  left:
+    - text: "Sitios"
+      href: index.html
+    - text: "Puerto Humo"
+      href: about.html
+    - text: "Especie"
+      href: sp.html
