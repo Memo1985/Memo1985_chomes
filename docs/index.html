@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Sitios de observación</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Gira Puntarenas</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Sitios</a>
+</li>
+<li>
+  <a href="about.html">Puerto Humo</a>
+</li>
+<li>
+  <a href="sp.html">Especie</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Sitios de observación</h1>
+
+</div>
+
+
+<p align="right">
+Jose GuillermoRamirez Bogantes
+</p>
+<div id="introduccion" class="section level4">
+<h4>Introducción</h4>
+<p align="justify">
+En Costa Rica el Golfo de Nicoya (Figura 1) es un sitio de gran importancia para las aves migratorias debido a la amplitud de sus mareas y a las características del sustrato de la zona, sin embargo esta zona también se ha visto afectada negativamente por la intervención del hombre, que ha eliminado zonas de humedales alterando así el ecosistema.
+</p>
+<div class="figure">
+<img src="imagen/nicoya.jpg" />
+
+</div>
+Figura 1: Golfo de Nicoya Guanacaste<br />
+<br />
+
+<p align="justify">
+Para este caso se realizaron visitas a tres lugares (1) Reserva Nacional de Vida Silvestre Mata Redonda, (2) Las salineras de Cocorocas y (3) Las lagunas camaroneras en Chomes; en cada sitio se realizó una observación directa del lugar para ver su comportamiento.
+</p>
+</div>
+<div id="objetivos-de-la-gira" class="section level4">
+<h4>Objetivos: de la Gira</h4>
+<ul>
+<li>Observar los diversos hábitats disponibles para las aves acuaticas y terrestres.</li>
+<li>Aplicar técnicas de ecología para descripcion de comportamientos.</li>
+<li>Reconocer los problemas ambientales.</li>
+</ul>
+<br />
+<br />
+Resultados:
+<p align="justify">
+Se presentan los cuadros con el listado taxonómico de las especies que observaron en los tres sitios.
+</p>
+<div class="figure">
+<img src="imagen/camaron.JPG" />
+
+</div>
+<p><em>Hydroprogne caspia</em> visto en una laguna utilizada para la producción de camaron</p>
+<p><strong>Cuadro de las especies encontradas en las lagunas camaroneras en Chomes</strong></p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="5%" />
+<col width="7%" />
+<col width="14%" />
+<col width="7%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cantidad Individuos</th>
+<th>Orden</th>
+<th>Familia</th>
+<th>Especie</th>
+<th>Estatus</th>
+<th>Semillas</th>
+<th>Insectos</th>
+<th>Moluscos</th>
+<th>Frutas</th>
+<th>Peces</th>
+<th>Otros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Ardea alba</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Buteogallus anthracinus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td>Butorides virescens</td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>60</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Calidris mauri</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Calidris minutilla</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Troglodytidae</td>
+<td><em>Campylorhynchus rufinucha</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Cathartes aura</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Charadrius semipalmatus</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina inca</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina passerina</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Coragyps atratus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta caerulea</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta thula</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Threskiornithidae</td>
+<td><em>Eudocimus albus</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Psittaciformes</td>
+<td>Psittacidae</td>
+<td><em>Eupsittula canicularis</em></td>
+<td>R</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Falco peregrinus</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Suliformes</td>
+<td>Fregatidae</td>
+<td><em>Fregata magnificens</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>107</td>
+<td>Charadriiformes</td>
+<td>Recurvirostridae</td>
+<td><em>Himantopus mexicanus</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Hydroprogne caspia</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Icterus pustulatus</em></td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Ictinia plumbea</em></td>
+<td>RR,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Leucophaeus atricilla</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>Carroña</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Limnodromus griseus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Pandionidae</td>
+<td><em>Pandion haliaetus</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Parulidae</td>
+<td><em>Parkesia noveboracensis</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>Passeriformes</td>
+<td>Hirundinidae</td>
+<td><em>Petrochelidon pyrrhonota</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Passerellidae</td>
+<td><em>Peucaea ruficauda</em></td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Suliformes</td>
+<td>Phalacrocoracidae</td>
+<td><em>Phalacrocorax brasilianus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Passeriformes</td>
+<td>Hirundinidae</td>
+<td><em>Progne chalybea</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Quiscalus mexicanus</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Parulidae</td>
+<td><em>Setophaga petechia</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Tringa flavipes</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Tringa semipalmata</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Zenaida asiatica</em></td>
+<td>R,M</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><br />
+<br />
+</p>
+<p><strong>Cuadro de las especies encontradas en la Reserva Nacional de Vida Silvestre Mata Redonda</strong></p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="5%" />
+<col width="7%" />
+<col width="14%" />
+<col width="7%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cantidad Individuos</th>
+<th>Orden</th>
+<th>Familia</th>
+<th>Especie</th>
+<th>Estatus</th>
+<th>Semillas</th>
+<th>Insectos</th>
+<th>Moluscos</th>
+<th>Frutas</th>
+<th>Peces</th>
+<th>Otros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Psittaciformes</td>
+<td>Psittacidae</td>
+<td><em>Amazona albifrons</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Ardea alba</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Ardea herodias</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>167</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Bubulcus ibis</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Corvidae</td>
+<td><em>Calocitta formosa</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Troglodytidae</td>
+<td><em>Campylorhynchus rufinucha</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Caracara cheriway</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Cathartes aura</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina inca</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina passerina</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Coragyps atratus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Cuculiformes</td>
+<td>Cuculidae</td>
+<td><em>Crotophaga sulcirostris</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Coraciiformes</td>
+<td>Momotidae</td>
+<td><em>Eumomota superciliosa</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Herpetotheres cachinnans</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>90</td>
+<td>Passeriformes</td>
+<td>Hirundinidae</td>
+<td><em>Hirundo rustica</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>21</td>
+<td>Ciconiiformes</td>
+<td>Ciconiidae</td>
+<td><em>Jabiru mycteria</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Charadriiformes</td>
+<td>Jacanidae</td>
+<td><em>Jacana spinosa</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Leptotila verreauxi</em></td>
+<td>R</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Piciformes</td>
+<td>Picidae</td>
+<td><em>Melanerpes hoffmannii</em></td>
+<td>R-END</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>36</td>
+<td>Ciconiiformes</td>
+<td>Ciconiidae</td>
+<td><em>Mycteria americana</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Myiarchus crinitus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Parabuteo unicinctus</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Quiscalus mexicanus</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Sublegatus arenarum</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Tigrisoma mexicanum</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Tyrannus melancholicus</em></td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Zenaida asiatica</em></td>
+<td>R,M</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><br />
+<br />
+</p>
+<div class="figure">
+<img src="imagen/sal.JPG" />
+
+</div>
+<p>Picinas para extraccion de sal</p>
+<p><strong>Cuadro de las especies encontradas en Las salineras de Cocorocas</strong></p>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="5%" />
+<col width="7%" />
+<col width="14%" />
+<col width="7%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cantidad Individuos</th>
+<th>Orden</th>
+<th>Familia</th>
+<th>Especie</th>
+<th>Estatus</th>
+<th>Semillas</th>
+<th>Insectos</th>
+<th>Moluscos</th>
+<th>Frutas</th>
+<th>Peces</th>
+<th>Otros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Actitis macularius</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Psittaciformes</td>
+<td>Psittacidae</td>
+<td><em>Amazona albifrons</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Ardea alba</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Arenaria interpres</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Psittaciformes</td>
+<td>Psittacidae</td>
+<td><em>Brotogeris jugularis</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Buteo albonotatus</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Buteo plagiatus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Accipitridae</td>
+<td><em>Buteogallus anthracinus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Butorides virescens</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>140</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Calidris mauri</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Calidris minutilla</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Cathartes aura</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña</td>
+</tr>
+<tr class="odd">
+<td>35</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Charadrius semipalmatus</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>60</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Charadrius wilsonia</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina inca</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Columbina passerina</em></td>
+<td>R</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Cathartiformes</td>
+<td>Cathartidae</td>
+<td><em>Coragyps atratus</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta caerulea</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta thula</em></td>
+<td>R,M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta tricolor</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>76</td>
+<td>Pelecaniformes</td>
+<td>Threskiornithidae</td>
+<td><em>Eudocimus albus</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Psittaciformes</td>
+<td>Psittacidae</td>
+<td><em>Eupsittula canicularis</em></td>
+<td>R</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Suliformes</td>
+<td>Fregatidae</td>
+<td><em>Fregata magnificens</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Gelochelidon nilotica</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>35</td>
+<td>Charadriiformes</td>
+<td>Recurvirostridae</td>
+<td><em>Himantopus mexicanus</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Hirundinidae</td>
+<td><em>Hirundo rustica</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Icterus pustulatus</em></td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Leucophaeus atricilla</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>Carroña</td>
+</tr>
+<tr class="odd">
+<td>87</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Limnodromus griseus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>75</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Limosa fedoa</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Milvago chimachima</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Myiarchus crinitus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Myiarchus panamensis</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Myiozetetes similis</em></td>
+<td>R</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>160</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Numenius phaeopus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Nycticorax nycticorax</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Accipitriformes</td>
+<td>Pandionidae</td>
+<td><em>Pandion haliaetus</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Patagioenas flavirostris</em></td>
+<td>R</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Pitangus sulphuratus</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Pelecaniformes</td>
+<td>Threskiornithidae</td>
+<td><em>Platalea ajaja</em></td>
+<td>R</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>130</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Pluvialis squatarola</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Quiscalus mexicanus</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Rynchops niger</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Thraupidae</td>
+<td><em>Saltator coerulescens</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Parulidae</td>
+<td><em>Setophaga petechia</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Sublegatus arenarum</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Thalasseus maximus</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Thalasseus sandvicensis</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Tringa semipalmata</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Columbiformes</td>
+<td>Columbidae</td>
+<td><em>Zenaida asiatica</em></td>
+<td>R,M</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>37</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Arenaria interpres</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Calidris mauri</em></td>
+<td>M</td>
+<td>o</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Charadrius semipalmatus</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Charadrius wilsonia</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Pelecaniformes</td>
+<td>Ardeidae</td>
+<td><em>Egretta caerulea</em></td>
+<td>R,M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>Pelecaniformes</td>
+<td>Threskiornithidae</td>
+<td><em>Eudocimus albus</em></td>
+<td>R</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Falco columbarius</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>pequeños vertebrados</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Gelochelidon nilotica</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>Charadriiformes</td>
+<td>Recurvirostridae</td>
+<td><em>Himantopus mexicanus</em></td>
+<td>R,M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Leucophaeus atricilla</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>Carroña</td>
+</tr>
+<tr class="odd">
+<td>140</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Limosa fedoa</em></td>
+<td>M</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Falconiformes</td>
+<td>Falconidae</td>
+<td><em>Milvago chimachima</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Numenius americanus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>120</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Numenius phaeopus</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>70</td>
+<td>Charadriiformes</td>
+<td>Charadriidae</td>
+<td><em>Pluvialis squatarola</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Passeriformes</td>
+<td>Icteridae</td>
+<td><em>Quiscalus mexicanus</em></td>
+<td>R</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>Carroña Y pequeños vertebrados</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Rynchops niger</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>40</td>
+<td>Charadriiformes</td>
+<td>Laridae</td>
+<td><em>Thalasseus maximus</em></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Charadriiformes</td>
+<td>Scolopacidae</td>
+<td><em>Tringa semipalmata</em></td>
+<td>M</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Passeriformes</td>
+<td>Tyrannidae</td>
+<td><em>Tyrannus forficatus</em></td>
+<td>M</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><br />
+<br />
+<br />
+</p>
+<p><strong>Referencias bibliográficas</strong><br />
+Barrantes, G., &amp; Pereira, A. (1992). Abundancia y fluctuaciones de aves limícolas (Charadriiformes) en una playa fangosa de Chomes, Costa Rica. Revista de Biología Tropical, 303-307.</p>
+<p>Garrigues, Richard., P. Camacho-Varela, M. Montoya, P. O’Donnell, O. Ramírez-Alán, J. Zook. 2018. Lista Oficial de las Aves de Costa Rica – Actualización 2018. Comité de Especies Raras y Registros Ornitológicos de Costa Rica (Comité Científico), Asociación Ornitológica de Costa Rica. Zeledonia 22:2. San José, Costa Rica.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
